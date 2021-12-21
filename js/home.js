@@ -3,24 +3,19 @@ function preLoader() {
 }
 
 // Change stylesheet on button click -
-const btn_1 = document.getElementById("switch-theme-btn");
-const btn_2 = document.getElementById("switch-theme-btn-2");
+const btn = document.getElementById("switch-theme-btn");
 
-btn_1.addEventListener("click", changeStylesheet);
-btn_2.addEventListener("click", changeStylesheet);
+btn.addEventListener("click", changeStylesheet);
 
 function changeStylesheet() {
-  console.log("blocked");
-  let btn = [btn_1, btn_2];
-  btn.forEach((element) => {
-    if (element.getAttribute("checked") == null) {
-      console.log("no check");
-      element.setAttribute("checked", "");
-    } else {
-      element.removeAttribute("checked");
-      console.log("check");
-    }
-  });
+  if (btn.getAttribute("checked") == null) {
+    console.log("no check");
+    btn.setAttribute("checked", "");
+  } else {
+    btn.removeAttribute("checked");
+    console.log("check");
+  }
+
   let stylesheet = document.getElementById("cssFile");
   var stylesheetClass = stylesheet.className;
   if (stylesheetClass == "christmas-home") {

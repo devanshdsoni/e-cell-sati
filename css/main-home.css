@@ -169,7 +169,7 @@ header::before {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -10;
-  filter: brightness(30%);
+  filter: brightness(40%);
 }
 
 .head {
@@ -700,12 +700,12 @@ header::before {
   padding: 0 1rem;
 }
 .offcanvas-vision li,
-span {
+.navbar .form-check {
   list-style: none;
   font-size: 19px;
   color: #008d7f;
   display: inline-block;
-  padding-left: 12px;
+  margin-bottom: 0.525rem;
 }
 
 .offcanvas-body {
