@@ -213,7 +213,7 @@ header::before {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -10;
-  filter: brightness(90%);
+
 }
 
 .head {
