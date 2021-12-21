@@ -1,7 +1,12 @@
 <?php
     $conn = mysqli_connect("127.0.0.1", "root" ,"", "ecell");
     if(mysqli_connect_errno()){
-        echo "Failed to connect to MySQL!";
+    
+        $response = array(
+            "success" => false,
+            "message" => "Failed to connect to MySQL!"
+        );
+        echo json_encode($response);
         return;
     }
 
