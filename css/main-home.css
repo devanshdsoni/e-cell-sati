@@ -165,7 +165,6 @@ header::before {
   background-image: url(../img/bg/bg-2.jpg);
   background-color: black;
   background-attachment: fixed;
-  background-position: 0px -160px;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -10;
